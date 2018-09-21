@@ -1,0 +1,88 @@
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fieldset{
+      padding: 20px;
+      position : absolute;
+      top: 100px;
+      left: 100px;
+      display: flex;
+      flex-direction: column;
+      legend {
+        background-color: #000;
+        color: #fff;
+        padding: 3px 6px;
+      }
+      .output {
+        font: 1rem 'Fira Sans', sans-serif;
+      }
+      .switch {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 30px;
+        .btn-switch{
+            width: 40%;
+            height: 30px;
+        }
+      }
+      #decrypt{
+        display: none;
+      }
+      label {
+        margin-top: 1rem;
+        display: block;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
+      .button{
+        margin: 5px 0 5px 0;
+        height: 30px;
+        background-color: #0099CC;
+        color: white;
+      }
+      .number{
+        height: 15px;
+      }
+      #reset-game{
+        background-color: #CC0000;
+      }
+    }
+    .content{ /* Grand conteneur */
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      width: 40%;
+      height: 60%;
+      // border: 1px solid black;
+      [data-row]{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 2%;
+        // border-bottom: 5px solid white;
+        [data-column]{
+          width: 2%;
+          height: 100%;
+        }
+        .column-decrypt{
+          border: 1px solid black;
+          background-color: white;
+        }
+      }
+    }
+  }
+}

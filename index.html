@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Morse Decoder</title>
+  <link rel="stylesheet/less" href="./styles/style.less">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <fieldset>
+    <legend>Paramètres de cryptage</legend>
+    <div class="switch">
+      <input type="button" id="switch-crypt" class="button btn-switch" value="Cryptage"/>
+      <input type="button" id="switch-decrypt" class="button btn-switch" value="Décryptage" />
+    </div>
+    <label id="crypt-label" for="crypt-string">Chaine de caractère à crypter</label>
+    <input type="text" id="crypt-string" name="crypt-string" class="number"/>
+    <input type="button" id="start-game" class="button" value="Crypter" />
+    <input type="button" id="decrypt" class="button" value="Décrypter" />
+    <input type="button" id="reset-game" class="button" value="Réinitialiser" />
+  </fieldset>
+  <div class="content"></div>
+
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.js"></script>
+</body>
+</html>
